@@ -62,6 +62,10 @@ Plug 'simeji/winresizer'
 Plug 'roman/golden-ratio'
 Plug 'xuhdev/SingleCompile'
 
+" tabnine
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+
+
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -641,8 +645,8 @@ let g:airline#extensions#virtualenv#enabled = 1
 
 " Syntax highlight
 " Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
-let python_highlight_all = 1
+" let g:polyglot_disabled = ['python']
+"" let python_highlight_all = 1
 
 
 " ruby
