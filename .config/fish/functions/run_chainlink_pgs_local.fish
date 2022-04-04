@@ -1,7 +1,7 @@
 function run_chainlink_pgs_local
-docker stop postgres
-docker rm postgres
-docker run -d -p 5432:5432 --name postgres \
+sudo docker stop postgres
+sudo docker rm postgres
+sudo docker run -d -p 5432:5432 --name postgres \
  -e POSTGRES_USER=samhassan \
  -e POSTGRES_DB=chainlink \
  -e POSTGRES_HOST_AUTH_METHOD=trust \
